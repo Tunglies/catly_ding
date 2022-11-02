@@ -5,7 +5,8 @@ import setuptools
 
 
 
-version = requests.get("https://pypi.org/pypi/catly-ding/json").json()["info"]["version"]
+# version = requests.get("https://pypi.org/pypi/catly-ding/json").json()["info"]["version"]
+version = "0.0.0"
 v0, v1, v2 = map(int, version.split("."))
 if v2 < 10:
     v2 += 1
